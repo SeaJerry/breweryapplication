@@ -1,5 +1,5 @@
 ## Project title
-A little info about your project and/ or overview that explains **what** the project is about.
+BREWERY SCOPE | This application focuses on providing users with information about breweries in close proximity or a new location. Users will input there city or zip code and will be provided a list of breweries with there location and the breweries website. 
 
 ## Motivation
 A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.

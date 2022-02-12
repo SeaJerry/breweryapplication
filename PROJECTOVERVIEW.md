@@ -7,38 +7,36 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-
-This application focuses on providing users with information about breweries in close proximity or a new location. Users will input there city or zipcode and will be provided a list of breweries with there location and the breweries website. 
+This application focuses on providing users with information about breweries in close proximity or a new location. Users will input there city or zip code and will be provided a list of breweries with there location and the breweries website. 
 
 ## API
 
 - [https://www.openbrewerydb.org/documentation/01-listbreweries]()
 
 
--   const [data, setData] = useState([]);
-  const [zipCode, setZipCode] = useState("");
-  const [zipCodeInput, setZipCodeInput] = useState("");
+        const [data, setData] = useState([]);
+        const [zipCode, setZipCode] = useState("");
+        const [zipCodeInput, setZipCodeInput] = useState("");
 
-  useEffect(() => {
-    // declare the async data fetching function
-    const fetchData = async () => {
-      const url = (`https://api.openbrewerydb.org/breweries?by_postal=${zipCode}`)
-      // get the data from the api
-      const response = await fetch(url);
-      // convert the data to Json
-      const data = await response.json();
-      // set state with the result
-      console.log(data)
-      setData(data);
-    };
-    // call the function
+        useEffect(() => {
+          // declare the async data fetching function
+          const fetchData = async () => {
+            const url = (`https://api.openbrewerydb.org/breweries?by_postal=${zipCode}`)
+            // get the data from the api
+            const response = await fetch(url);
+            // convert the data to Json
+            const data = await response.json();
+            // set state with the result
+            console.log(data)
+            setData(data);
+          };
+          // call the function
 
-    fetchData()
-      // make sure to catch any error
-      .catch(console.error);
-  }, [zipCode]);
+          fetchData()
+            // make sure to catch any error
+            .catch(console.error);
+        }, [zipCode]);
 
 
 ```
@@ -49,8 +47,9 @@ This application focuses on providing users with information about breweries in 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
-
-- [add link to your wireframes]()
+Mobile & Tablet Wireframe
+- [https://lucid.app/lucidchart/f7b1d8c5-3520-4875-8595-bac4c5248df6/edit?invitationId=inv_968d448d-156d-4f4d-9c73-d57c81fc94d1]()
+- []()
 - [add link to your react architecture]()
 
 
