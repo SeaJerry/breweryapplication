@@ -2,20 +2,47 @@
 
 ## Project Links
 
-- [add your github repo link]()
+- [https://github.com/SeaJerry/musicapplication]()
 - [add your deployment link]()
 
 ## Project Description
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
+
+This application focuses on providing users with information about breweries in close proximity or a new location. Users will input there city or zipcode and will be provided a list of breweries with there location and the breweries website. 
+
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+- [https://www.openbrewerydb.org/documentation/01-listbreweries]()
+
+
+-   const [data, setData] = useState([]);
+  const [zipCode, setZipCode] = useState("");
+  const [zipCodeInput, setZipCodeInput] = useState("");
+
+  useEffect(() => {
+    // declare the async data fetching function
+    const fetchData = async () => {
+      const url = (`https://api.openbrewerydb.org/breweries?by_postal=${zipCode}`)
+      // get the data from the api
+      const response = await fetch(url);
+      // convert the data to Json
+      const data = await response.json();
+      // set state with the result
+      console.log(data)
+      setData(data);
+    };
+    // call the function
+
+    fetchData()
+      // make sure to catch any error
+      .catch(console.error);
+  }, [zipCode]);
 
 
 ```
-{data: {} }
+
 ```
 
 
