@@ -88,11 +88,11 @@ Mobile & Tablet Wireframe
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| |  |
 | Working with API | H | 4hrs|  |  |
-| Displaying Data | 4-5hrs| | |
-| NavBar functionality | 3hrs | | |
-| Image Carousel| 2-3hrs | | |
-| Responsive Layout | 4hrs | | |
-| Designing and Building Components | 10 hrs | | |
+| Displaying Data | H| 4-5hrs| |
+| NavBar functionality | H |3hrs | | |
+| Image Carousel| M |2-3hrs | | |
+| Responsive Layout | H |4hrs | | |
+| Designing and Building Components | H |10 hrs | | |
 
 | Total | H | 32 hrs|  | |
 
