@@ -79,7 +79,6 @@ Mobile & Tablet Wireframe
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav and form | 
 | Main | This will render the image carousel along with the list of breweries |
-| Individual Card| This will be the card or "page" that includes the specific breweries information |
 | Users List| This will hold the users personal "favorite" lists |
 | Cards | This will render the users information request of the specific breweries |
 | Footer | This will render the header include the nav | 
