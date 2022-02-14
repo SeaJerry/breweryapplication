@@ -59,6 +59,7 @@ Mobile & Tablet Wireframe
 - Render data on page 
 - Allow user to interact with the page
 - Place data into cards with brewery information
+- create a personal favorite list
 - create a navigation with a menu
 - create a carousel to display images of brewery 
 - create a responsive grid layout
@@ -68,6 +69,7 @@ Mobile & Tablet Wireframe
 #### PostMVP 
 
 - Add styling
+  
 
 
 ## Components
@@ -78,6 +80,7 @@ Mobile & Tablet Wireframe
 | Header | This will render the header include the nav and form | 
 | Main | This will render the image carousel along with the list of breweries |
 | Individual Card| This will be the card or "page" that includes the specific breweries information |
+| Users List| This will hold the users personal "favorite" lists |
 | Cards | This will render the users information request of the specific breweries |
 | Footer | This will render the header include the nav | 
 
@@ -89,15 +92,19 @@ Mobile & Tablet Wireframe
 | Adding Form | H | 3hrs| |  |
 | Working with API | H | 4hrs|  |  |
 | Displaying Data | H| 4-5hrs| |
+| Users favorite list | H |4-5hrs | | |
 | NavBar functionality | H |3hrs | | |
 | Image Carousel| M |2-3hrs | | |
 | Responsive Layout | H |4hrs | | |
 | Designing and Building Components | H |10 hrs | | |
 
-| Total | H | 32 hrs|  | |
+| Total | H | 37 hrs|  | |
 
 ## Additional Libraries
- 
+ - React
+ - Boot Strap 
+ - Font Awesome
+ - Google Fonts
 
 ## Code Snippet
 

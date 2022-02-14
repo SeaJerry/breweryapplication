@@ -2,7 +2,8 @@
 BREWERY SCOPE | This application focuses on providing users with information about breweries in close proximity or a new location. Users will input there city or zip code and will be provided a list of breweries with there location and the breweries website. 
 
 ## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+
+The motivation behind the creation of this project is to add accessibility to information about breweries that users are unaware of.
 
 ## Build status
 Build status of continus integration i.e. travis, appveyor etc. Ex. - 
@@ -35,7 +36,7 @@ Provide step by step series of examples and explanations about how to get a deve
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+- [https://www.openbrewerydb.org/documentation/01-listbreweries]()
 
 ## Tests
 Describe and show how to run the tests with code examples.
