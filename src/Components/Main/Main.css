@@ -1,0 +1,42 @@
+.z-form {
+    padding: 10px;
+    margin: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #f5f5f5;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.input-btn {
+    margin: 20px 0;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+
+.submit-btn {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.submit-btn:hover {
+    background-color:#c19898 ;
+    color: #f5f5f5;
+}

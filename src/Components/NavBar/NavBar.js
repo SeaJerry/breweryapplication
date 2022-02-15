@@ -5,6 +5,7 @@ import * as AiIcons from "react-icons/ai";
 import { useState } from "react";
 import { SidebarData } from "./SidebarData";
 
+
 const NavBar = () => {
   const [sidebar, setSidebar] = useState(false);
 
@@ -16,6 +17,7 @@ const NavBar = () => {
         <Link to="#" className="menu-bars">
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
+        <h2 className="logo">Scope.</h2>
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
         <ul className="nav-menu-items" onClick={showSidebar}>

@@ -1,6 +1,6 @@
-import React from "react";
+import './Main.css'
 import { useState } from "react";
-import Cards from "../Cards/Cards";
+
 
 
 const Main = ({handleZipCode, updateData}) => {
@@ -25,14 +25,14 @@ const Main = ({handleZipCode, updateData}) => {
 
   return (
     <div className="z-form">
-      <form className="search-form">
+      <form className="search-form" >
         <input
           value={zipCodeInput}
           type="text"
           onChange={handleChange}
           placeholder="Enter Zip Code"
-        />
-        <input onClick={handleSubmit} type="submit" />
+          className="input-btn"/>
+        <input className="submit-btn" onClick={handleSubmit} type="submit" />
       </form>
     </div>
   );

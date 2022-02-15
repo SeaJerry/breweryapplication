@@ -54,6 +54,7 @@ function App() {
       </Routes>
 
       {isSubmitted && <Cards apiCallData={data} />}
+      <Footer />
     </div>
   );
 }
