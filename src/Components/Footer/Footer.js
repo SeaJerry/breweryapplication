@@ -2,6 +2,9 @@ import './Footer.css'
 import * as TiIcons from 'react-icons/ti'
 
 const Footer = () => {
+
+
+  
   return (
     <div className="footer-bar">
       <div className="social-icons">

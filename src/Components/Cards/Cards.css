@@ -30,9 +30,17 @@
     height: 30px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
+    transition: .5s;
+}
 
+.cards-btn:hover {
+    background-color:#c19898;
+    color: #fff;
 }
 
 p {
     margin: 10px;
+    letter-spacing: 1px;
+    font-weight: 200;
 }

@@ -14,6 +14,7 @@ function App() {
   const [data, setData] = useState([]);
   const [zipCode, setZipCode] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [usersListData, setUsersListData] = useState([]);
   
 
   useEffect(() => {
@@ -42,21 +43,52 @@ function App() {
   const updateData = (isTrue) => {
     setIsSubmitted(isTrue)
   }
+  
+  const resetIsSubmitted = () => {
+    setIsSubmitted(false)
+  }
+
+  const handleUsersData = (usersData) => {
+    if (usersListData === []){
+      setUsersListData(usersData)
+    } else {
+      setUsersListData([...usersListData,usersData])
+    }
+    console.log(usersListData)
+  }
+
+
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar removeData={resetIsSubmitted} />
       <Routes>
         <Route path="/" element={<Main handleZipCode={handleZipCode} updateData={updateData}/>} />
         <Route path="/About" element={<About/>} />
-        <Route path="/UsersList" element={<UsersList/>} />
+        <Route path="/UsersList" element={<UsersList /> } />
         <Route path="/Footer" element={<Footer/>} />
       </Routes>
 
-      {isSubmitted && <Cards apiCallData={data} />}
+      {isSubmitted && <Cards apiCallData={data} handleUsersData={handleUsersData} />}
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+
+/*     1. add click event to cards/button
+      2. click event should send brewery data back up to APP.js
+      3.  create  new event handler which update usersLists array or object.
+      4. send/pass user lists array or object to userlists component. 
+      5. create the props in userslist and display data.
+      6. map through userslist to display individual cards.
+
+
+
+
+
+
+
+*/

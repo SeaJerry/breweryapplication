@@ -6,10 +6,14 @@ import { useState } from "react";
 import { SidebarData } from "./SidebarData";
 
 
-const NavBar = () => {
+const NavBar = ({removeData}) => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+  
+  const handleQueryRemoval = () => {
+    removeData()
+  }
 
   return (
     <>
@@ -28,8 +32,8 @@ const NavBar = () => {
           </li>
           {SidebarData.map((item, index) => {
             return (
-              <li key={index} className={item.className}>
-                <Link to={item.path}>
+              <li key={index} className={item.className} >
+                <Link to={item.path} onClick={handleQueryRemoval}>
                   {item.icon}
                   <span>{item.title}</span>
                 </Link>
