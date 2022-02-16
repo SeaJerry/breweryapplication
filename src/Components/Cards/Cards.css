@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 .cards-container{
     display: flex;
@@ -12,16 +13,18 @@
     text-align: center;
     color: #ffff;
     /* border: #fff 5px solid; */
-    height: 300px;
-    width: 250px;
-    border-radius: 5px;
+    height: 225px;
+    width: 350px;
+    border-radius: 10px;
     margin: 20px;
     background-color: #c19898;
     padding: 10px;
+    opacity: .9;
+
 }
 
 .brewery-title {
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
 }
 
@@ -32,6 +35,7 @@
     border: none;
     cursor: pointer;
     transition: .5s;
+    color: #bbb;
 }
 
 .cards-btn:hover {
@@ -42,5 +46,24 @@
 p {
     margin: 10px;
     letter-spacing: 1px;
+    font-size: 14px;
     font-weight: 200;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    .cards-container{
+        width: 700px;
+    }
+    .cards-btn {
+        width: 300px;
+        font-size: 18px;
+        color: #bbb;
+    }
+    .brewery-title {
+        font-size: 25px ;
+    }
+    p {
+        font-size: 16px;
+    }
 }

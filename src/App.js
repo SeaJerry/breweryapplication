@@ -7,7 +7,7 @@ import Cards from "./Components/Cards/Cards";
 import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import UsersList from "./Components/UsersList/UsersList";
-import About from './Components/About/About'
+import About from "./Components/About/About";
 
 function App() {
   // DATA STATE // STORAGE
@@ -15,7 +15,6 @@ function App() {
   const [zipCode, setZipCode] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [usersListData, setUsersListData] = useState([]);
-  
 
   useEffect(() => {
     // declare the async data fetching function
@@ -37,46 +36,51 @@ function App() {
   }, [zipCode]);
   // dependency param
   const handleZipCode = (zip) => {
-    setZipCode(zip)
-  }
+    setZipCode(zip);
+  };
 
   const updateData = (isTrue) => {
-    setIsSubmitted(isTrue)
-  }
-  
+    setIsSubmitted(isTrue);
+  };
+
   const resetIsSubmitted = () => {
-    setIsSubmitted(false)
-  }
+    setIsSubmitted(false);
+  };
 
-  const handleUsersData = (usersData) => {
-    if (usersListData === []){
-      setUsersListData(usersData)
+  const handleUsersData = (brewery) => {
+    if (usersListData === []) {
+      setUsersListData(brewery);
     } else {
-      setUsersListData([...usersListData,usersData])
+      setUsersListData([...usersListData, brewery]);
     }
-    console.log(usersListData)
-  }
-
-
-
+  };
+  console.log(usersListData);
   return (
-    <div className="App">
-      <NavBar removeData={resetIsSubmitted} />
-      <Routes>
-        <Route path="/" element={<Main handleZipCode={handleZipCode} updateData={updateData}/>} />
-        <Route path="/About" element={<About/>} />
-        <Route path="/UsersList" element={<UsersList /> } />
-        <Route path="/Footer" element={<Footer/>} />
-      </Routes>
+    <>
+      <div className="App">
+        <NavBar removeData={resetIsSubmitted} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Main handleZipCode={handleZipCode} updateData={updateData} />
+            }
+          />
+          <Route path="/About" element={<About />} />
+          <Route path="/UsersList" element={<UsersList usersListData={usersListData}/>} />
+          <Route path="/Footer" element={<Footer />} />
+        </Routes>
 
-      {isSubmitted && <Cards apiCallData={data} handleUsersData={handleUsersData} />}
+        {isSubmitted && (
+          <Cards apiCallData={data} handleUsersData={handleUsersData} />
+        )}
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
 export default App;
-
 
 /*     1. add click event to cards/button
       2. click event should send brewery data back up to APP.js

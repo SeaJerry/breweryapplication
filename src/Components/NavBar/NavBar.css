@@ -7,6 +7,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+
 
 }
 
@@ -82,4 +85,14 @@ span {
     font-size: 25px;
     padding-right: 18px;
     letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px){
+    .nav-text {
+        margin: 15px;
+    }
+    .nav-text a {
+        font-size: 22px;
+    }
+
 }

@@ -23,3 +23,4 @@ const Cards = ({apiCallData, handleUsersData}) => {
     };
 
 export default Cards;
+

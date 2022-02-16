@@ -3,7 +3,7 @@ import "./About.css";
 const About = () => {
   return (
     <div className="about-container">
-      <h1 className="about-title">Scope.</h1>
+      <div className='about-cards'>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
         tincidunt justo. Donec hendrerit nisl ac faucibus vehicula. Phasellus in
@@ -21,6 +21,7 @@ const About = () => {
         fermentum mi elit, ac rhoncus urna viverra vel. Donec feugiat venenatis
         elementum. Duis consectetur leo quis sem interdum, eu tempus neque
         aliquam.</p>
+      </div>
     </div>
   );
 };
