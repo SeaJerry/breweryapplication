@@ -34,6 +34,7 @@ const Main = ({handleZipCode, updateData}) => {
           className="input-btn"/>
         <input className="submit-btn" onClick={handleSubmit} type="submit" />
       </form>
+      
     </div>
   );
 };

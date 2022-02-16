@@ -88,14 +88,14 @@ Mobile & Tablet Wireframe
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| |  |
-| Working with API | H | 4hrs|  |  |
-| Displaying Data | H| 4-5hrs| |
-| Users favorite list | H |4-5hrs | | |
-| NavBar functionality | H |3hrs | | |
+| Adding Form | H | 3hrs| 2.5hr |  |
+| Working with API | H | 4hrs| 4-5hr |  |
+| Displaying Data | H| 4-5hrs|6hrs |  |
+| Users favorite list | H |4-5hrs |4hrs | |
+| NavBar functionality | H |3hrs |2hrs | |
 | Image Carousel| M |2-3hrs | | |
-| Responsive Layout | H |4hrs | | |
-| Designing and Building Components | H |10 hrs | | |
+| Responsive Layout | H |4hrs |3-4hrs | |
+| Designing and Building Components | H |10 hrs |5hrs | |
 
 | Total | H | 37 hrs|  | |
 
@@ -107,7 +107,16 @@ Mobile & Tablet Wireframe
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+      const handleUsersData = (brewery) => {
+        if (usersListData === []) {
+          setUsersListData(brewery);
+        } else {
+          setUsersListData([...usersListData, brewery]);
+        }
+      };
+      console.log(usersListData);
+
+This Code block allow me to add the users choice of brewery to their personal list. This took some trial and error and i thought i had a bug but was later informed it was just were my console log was. Good lesson in understanding not to place a console.log where there is a state change. 
 
 ```
 function reverse(string) {

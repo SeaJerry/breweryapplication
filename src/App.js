@@ -8,6 +8,8 @@ import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import UsersList from "./Components/UsersList/UsersList";
 import About from "./Components/About/About";
+import Carousel from "./Components/Carousel/Carousel";
+import { CarouselImageData } from "./Components/Carousel/CarouselImageData";
 
 function App() {
   // DATA STATE // STORAGE
@@ -74,6 +76,7 @@ function App() {
         {isSubmitted && (
           <Cards apiCallData={data} handleUsersData={handleUsersData} />
         )}
+      <Carousel slides={CarouselImageData} />
       </div>
       <Footer />
     </>

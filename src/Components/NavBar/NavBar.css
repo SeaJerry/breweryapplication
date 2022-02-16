@@ -88,6 +88,15 @@ span {
 }
 
 @media only screen and (min-width: 768px){
+    .navbar {
+        height: 100px;
+    }
+    .menu-bars {
+        font-size: 35px;
+    }
+    .logo {
+        font-size: 35px;
+    }
     .nav-text {
         margin: 15px;
     }
