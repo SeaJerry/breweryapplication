@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     overflow: auto;
+    margin-top: 225px;
 }
 .cards-container{
     display: flex;
@@ -12,7 +13,6 @@
     align-items: center;
     text-align: center;
     color: #ffff;
-    /* border: #fff 5px solid; */
     height: 225px;
     width: 350px;
     border-radius: 10px;
@@ -52,6 +52,9 @@ p {
 
 /* Tablet */
 @media only screen and (min-width: 768px){
+    .brewery-list {
+        margin-top: 300px;
+    }
     .cards-container{
         width: 700px;
     }

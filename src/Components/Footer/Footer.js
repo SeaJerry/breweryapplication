@@ -1,6 +1,7 @@
 import './Footer.css'
 import * as TiIcons from 'react-icons/ti'
 
+
 const Footer = () => {
 
 

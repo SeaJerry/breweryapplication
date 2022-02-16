@@ -1,5 +1,6 @@
 import * as AiIcons from 'react-icons/ai'
 import * as IoIcons from 'react-icons/io'
+import * as FiIcons from 'react-icons/fi'
 
 export const SidebarData = [
     {
@@ -21,9 +22,9 @@ export const SidebarData = [
         className: 'nav-text'
     },
     {
-        title: 'Contact',
-        path: '/Footer',
-        icon: <AiIcons.AiFillContacts />,
+        title: 'Blog',
+        path: '/Blog',
+        icon: <FiIcons.FiBook />,
         className: 'nav-text'
     },
     ];
