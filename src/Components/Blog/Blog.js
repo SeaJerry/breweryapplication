@@ -3,42 +3,26 @@ import { useState } from "react";
 import { MdOutlineArrowLeft, MdOutlineArrowRight } from "react-icons/md";
 import "./Blog.css";
 
+import React from "react";
 
-import React from 'react'
-
-const Blog = ({BlogCardData}) => {
-
+const Blog = ({ BlogCardData }) => {
   const blogCards = BlogCardData.map((card, index) => {
-    return(
-      <div className="blog-cards-container">
-        <img src={card.url} alt="blog cards"/>
-        <h1>{card.title}</h1>
+    return (
+      <div className="blog-layout">
+        <div className="blog-cards-container">
+          <img className="blog-cards-image" src={card.url} alt="blog cards" />
+          <h1 className="blog-title">{card.title}</h1>
+          <p className="blog-text">{card.body}</p>
+          <button className="blog-btn">View More</button>
+        </div>
       </div>
-    )
-  })
+    );
+  });
 
+  return <>{blogCards}</>;
+};
 
-
-  return (
-    <div>
-      {blogCards}
-    </div>
-  )
-}
-
-export default Blog
-
-
-
-
-
-
-
-
-
-
-
-
+export default Blog;
 
 // const Blog = ({ BlogCardData }) => {
 
@@ -80,9 +64,9 @@ export default Blog
 //         <div className='staff'>
 //             <h1>Staff Picks</h1>
 //         </div>
-        
+
 //       </section>
-      
+
 //     </div>
 //   );
 // };
