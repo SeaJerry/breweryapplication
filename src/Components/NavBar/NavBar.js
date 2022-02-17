@@ -5,15 +5,14 @@ import * as AiIcons from "react-icons/ai";
 import { useState } from "react";
 import { SidebarData } from "./SidebarData";
 
-
-const NavBar = ({removeData}) => {
+const NavBar = ({ removeData }) => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-  
+
   const handleQueryRemoval = () => {
-    removeData()
-  }
+    removeData();
+  };
 
   return (
     <>
@@ -32,7 +31,7 @@ const NavBar = ({removeData}) => {
           </li>
           {SidebarData.map((item, index) => {
             return (
-              <li key={index} className={item.className} >
+              <li key={index} className={item.className}>
                 <Link to={item.path} onClick={handleQueryRemoval}>
                   {item.icon}
                   <span>{item.title}</span>

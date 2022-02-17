@@ -1,24 +1,26 @@
 .about-container {
     background: url('https://images.unsplash.com/photo-1641965484204-8fbc982477fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80');
     background-size: cover;
-    overflow: scroll;
+    overflow: hidden;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
 }
 
 .about-cards {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     background-color: #ffff;
     opacity: .6;
-    border-radius: 5px;
     width: 300px;
-    overflow: scroll;
-    margin: 10px;
+    height: 100vh;
+    margin-top: 60px;
 }
 
 .about-title {
@@ -35,8 +37,10 @@
     height: 300px;
 }
 
-.about-text p {
+ .about-text {
     font-size: 13px;
+    padding: 0 10px 40px;
+    margin-bottom: 200px;
 }
 
 
@@ -44,22 +48,34 @@
 @media only screen and (min-width: 768px){
     .about-cards {
         width: 600px;
-        height: 100px;
-    }
-
-    .about-text {
-        width: 600px;
-        height: 300px;
+        height: 100vh;
     }
 
     .about-title {
-        font-size: 45px;
+        font-size: 40px;
+        margin-top: 80px;
     }
 
-    .about-text p {
+    .about-text  {
+        font-size: 18px;
+        width: 400px;
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .about-cards{
+        width: 900px;
+    }
+    .about-text{
+        width: 700px;
+        font-size: 25px;
+    }
+    .about-title{
+        font-size: 50px;
+        margin-top: 100px;
+    }
+    .about-text{
         font-size: 18px;
     }
-
-  
-    
 }

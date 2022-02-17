@@ -1,15 +1,14 @@
 .footer-bar{
     background-color:#000;
-    height: 150px;
+    height: 80px;
     width: 100%;
-    position: fixed;
+    position: absolute;
+    bottom: 0;
 }
-
 .social-icons {
     display: flex;
     justify-content: space-evenly;
 }
-
 .social-icons a {
     color:#f5f5f5;
     margin-top: 23px;
@@ -18,19 +17,23 @@
     transform: scale(1.1);
     transition: 0.5s;
 }
-
 .social-icons a:hover {
     transform: scale(1.5) translateY(-8px);
     color: #c19898;
 }
 
-/* Tablet */
-
 @media only screen and (min-width: 768px){
     .social-icons{
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .social-icons a {
         font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .social-icons a {
+        margin-top: 15px;
+        font-size: 28px;
     }
 }

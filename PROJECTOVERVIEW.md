@@ -88,19 +88,19 @@ Mobile & Tablet Wireframe
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 2.5hr |  |
-| Working with API | H | 4hrs| 4-5hr |  |
-| Displaying Data | H| 4-5hrs|6hrs |  |
-| Users favorite list | H |4-5hrs |4hrs | |
-| NavBar functionality | H |3hrs |2hrs | |
-| Image Carousel| M |2-3hrs | | |
-| Responsive Layout | H |4hrs |3-4hrs | |
-| Designing and Building Components | H |10 hrs |5hrs | |
+| Adding Form | H | 3hrs| 2.5hr | 2.5hrs  |
+| Working with API | H | 4hrs| 4-5hr | 5hrs  |
+| Displaying Data | H| 4-5hrs| 6hrs | 6hrs  |
+| Users favorite list | H |4-5hrs | 4hrs | 4hrs |
+| NavBar functionality | H |3hrs |2hrs | 2hrs  |
+| Responsive Layout | H | 4hrs | 3-4hrs | 5-6hrs |
+| Designing and Building Components | H |10 hrs | 5hrs | 7hrs |
 
 | Total | H | 37 hrs|  | |
 
 ## Additional Libraries
  - React
+ - React Icons
  - Boot Strap 
  - Font Awesome
  - Google Fonts

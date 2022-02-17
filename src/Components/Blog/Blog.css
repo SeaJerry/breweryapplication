@@ -1,34 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400;1,500;1,600&display=swap');
-
 .blog-layout {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #485461;
-
+    height: 90vh;
+    overflow: scroll;
+    margin: 100px 0 0 0;
+    border-radius: 10px;
 }
 
 .blog-cards-container {
-    width: 300px;
-    
+    width: 270px;
     background-color: #fff ;
-    opacity: .7;
+    opacity: .8;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* padding: 10px; */
-    margin: 100px 0 0 0;
+    margin: 20px 0 0 0;
     border-radius: 10px ;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: .5s;
+    animation: ease-in;
+}
+
+.blog-cards-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+    background-color: #c19898;
+    color: #fff;
+    opacity: 1;
 }
 
 .blog-cards-image {
-    width: 300px;
-    height: 275px;
+    width: 270px;
+    height: 245px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
-    /* padding: 10px; */
-    /* border-radius: 10px; */
 }
 
 .blog-btn {
@@ -36,8 +45,45 @@
     height: 30px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #c19898;
+    color: #fff;
+    transition: .5s;
+}
+
+.blog-btn:hover {
+    color:#c19898 ;
+    background-color: #fff;
 }
 
 .blog-title {
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.blog-text {
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px){
+    .blog-layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 7%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .blog-layout{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -5px;
+        height: 100vh;
+    }
 }

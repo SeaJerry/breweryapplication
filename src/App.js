@@ -8,8 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import UsersList from "./Components/UsersList/UsersList";
 import About from "./Components/About/About";
 import Blog from "./Components/Blog/Blog";
-import { CarouselImageData } from "./Components/Blog/CarouselImageData";
-import { BlogCardData} from "./Components/Blog/BlogCardData";
+import { BlogCardData } from "./Components/Blog/BlogCardData";
 
 function App() {
   const [data, setData] = useState([]);
@@ -70,12 +69,13 @@ function App() {
           />
           <Route path="/Blog" element={<Blog BlogCardData={BlogCardData} />} />
         </Routes>
-
-        {isSubmitted && (
-          <Cards apiCallData={data} handleUsersData={handleUsersData} />
-        )}
+        <div className="cards-section">
+          {isSubmitted && (
+            <Cards apiCallData={data} handleUsersData={handleUsersData} />
+          )}
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }
