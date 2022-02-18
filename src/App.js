@@ -53,8 +53,8 @@ function App() {
   console.log(usersListData);
   return (
     <>
+      <NavBar removeData={resetIsSubmitted} />
       <div className="App">
-        <NavBar removeData={resetIsSubmitted} />
         <Routes>
           <Route
             path="/"
@@ -74,8 +74,8 @@ function App() {
             <Cards apiCallData={data} handleUsersData={handleUsersData} />
           )}
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
