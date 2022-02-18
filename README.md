@@ -29,7 +29,28 @@ Ex. -
 What makes your project stand out?
 
 ## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+        const [data, setData] = useState([]);
+        const [zipCode, setZipCode] = useState("");
+        const [zipCodeInput, setZipCodeInput] = useState("");
+
+        useEffect(() => {
+          // declare the async data fetching function
+          const fetchData = async () => {
+            const url = (`https://api.openbrewerydb.org/breweries?by_postal=${zipCode}`)
+            // get the data from the api
+            const response = await fetch(url);
+            // convert the data to Json
+            const data = await response.json();
+            // set state with the result
+            console.log(data)
+            setData(data);
+          };
+          // call the function
+
+          fetchData()
+            // make sure to catch any error
+            .catch(console.error);
+        }, [zipCode]);
 
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
@@ -56,4 +77,4 @@ Give proper credits. This could be a link to any repo which inspired you to buil
 ## License
 A short snippet describing the license (MIT, Apache etc)
 
-MIT © [Yourname]()
+MIT © [Jerry Sea]()
